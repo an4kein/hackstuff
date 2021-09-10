@@ -2,6 +2,7 @@ from ipaddress import ip_address
 
 # Python - Generate a list of IP addresses from user input
 # https://stackoverflow.com/questions/17641492/how-can-i-generate-all-possible-ips-from-a-list-of-ip-ranges-in-python
+# https://ipinfo.io/
 
 def ips(start, end):
     '''Return IPs in IPv4 range, inclusive.'''
