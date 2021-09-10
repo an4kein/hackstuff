@@ -10,6 +10,11 @@ def ips(start, end):
     return [ip_address(ip).exploded for ip in range(start_int, end_int)]
 
 
-lista = ips('172.16.0.1', '172.16.0.255')
-for x in range(len(lista)):
-        print(lista[x])
+results = ips('192.168.0.1', '192.168.0.255')
+#for x in range(len(lista)):
+ #       print(lista[x])
+
+with open('test-resultado.txt', 'w') as f:
+    for row in results:
+        f.write("%s\n" % str(row))
+print("Resultado salvo em test-resultado.txt")
